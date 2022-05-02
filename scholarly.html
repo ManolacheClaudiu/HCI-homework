@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Scholarly</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style_scholarly.css">
+    </head>
+
+    <body prefix="schema: http://schema.org">
+        <div class="status">Human Computer Interaction</div>
+
+        <header>
+            <h1 style="text-align: center;">Business Admin</h1>
+        </header>
+
+        <ol>
+            <li>
+                <a href="#authors">Authors</a>
+            </li>
+            <li>
+                <a href="#introduction">Introduction</a>
+                <ol>
+                    <li><a href="#purpose">Purpose</a></li>
+                    <li><a href="#conventions"> Conventions</a></li>
+                    <li><a href="#references">References</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="#description">Description</a>
+                <ol>
+                    <li><a href="#perspective">Perspective</a></li>
+                    <li><a href="#functions"> Functions</a></li>
+                    <li><a href="#operatingEnvironment">Operating environment</a></li>
+                    <li><a href="#designConstraints"> Design constraints</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="#requirements">Requirements</a>
+                <ol>
+                    <li><a href="#userInterface"> User interface</a></li>
+                    <li><a href="#softwareInterface"> Software interface</a></li>
+                    <li><a href="#communicationInterface">Communication interface</a></li>
+                    <li><a href="#registerLogin">Register and Log in</a></li>
+                    <li><a href="#conclusion">Conclusion</a></li>
+
+                </ol>
+            </li>
+            <li>
+                <a href="#bibliography">Bibliography</a>
+            </li>
+        </ol>
+        <article id="articles" typeof = "schema:ScholarlyArticle">
+            <section id="authors"  typeof="sa:AuthorsList">
+                    <h2 id="author"> Authors</h2>
+                    <ul>
+                        <li property = "schema:author" typeof="sa:ContributorRole">
+                            <a property = "schema:author" href="#" typeof="schema:Person">
+                                    <span property= "schema:FirstName" >Claudiu</span>
+                                    <span property= "schema:LastName" >Manolache</span>
+                            </a>
+                        </li>
+                    </ul>
+            </section>
+            <section role="doc-introduction">
+                    <h2 id="introduction"> Introduction</h2>
+                    <p>
+                        Business Admin is an web application designed to be helpfull for administration of business, in special for startups.
+
+                    </p>
+                    <h3 id="purpose">Purpose</h3>
+                    <p>
+                        Busines Admin is an web application thought to be a good tool for administration of a small business.
+                        As a lot of business had issues with the administration, either they forgot how much quantity of a product they have or they can not
+                        manage well the money from their business.
+                        The user can be a simple client, an employee or the administrator.
+                        The client can place a order. The employee will recieve the order, and the administrator will have full visibility of it.
+                        The application comes from the experience my friends have to manage their business.
+                        At the moment the application will be free, but it will be devoloped a premium version for more functionality.
+                    </p>
+
+                    <h3 id="conventions">Conventions</h3>
+                    <p>
+                        The admin has the ability to manage the stocks of their products, the money the have, the money they spend for investion, salaries and others
+                        and the money they win.
+                        To be more complex, the employee will be able to register on the app and help the administration by providing information about the stock which was made,
+                        what they need for their work. This will help the business to reduce the loss.
+                    </p>
+                    <h3 id="references">References</h3>
+                    <p>
+                        For our site, we used primarily W3Schools
+                    </p>
+                    <ol>
+                        <li><a href="https://www.w3schools.com/html">https://www.w3schools.com/html</a></li>
+                        <li><a href="https://www.w3schools.com/css/">https://www.w3schools.com/css/</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=0e02dl66PYo">Css Flexbox tutorial</a></li>
+
+                        <li><a href="https://www.w3schools.com/django/index.php">Django tutorial</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=PtQiiknWUcI&t">Django Youtube Tutorial</a></li>
+                    </ol>
+            </section>
+            <section>
+                <h2 id="description">Description</h2>
+                <h3 id= "perspective">Perspective</h3>
+                <p>
+                    The application is design to help small business to reduce their loss and help them grow with a good managing of their money, stock and ohers.
+                    For the begining, the app will be free, but a more complex version will be designed for premium users.
+                </p>
+                <h3 id= "functions"> Functions</h3>
+                <p>
+                    The Business Admin come with the function of administration all the money from the business, manage their orders of products or services and
+                    also help the administrator to know what he needs to buy for a proper development of the work.
+                </p>
+                <h3 id= "operatingEnvironment">Operating environment </h3>
+                <p>
+                    The program is developted with Django, HTML templates, CSS and SQL.
+                </p>
+                <h3 id= "designConstraints">Design constraints</h3>
+                <p>
+                    As business adminsitration is a very complex task, the application is still not able to do all the task yet.
+                </p>
+            </section>
+            <section>
+                <h2 id="requirements">Requirements</h2>
+                <h3 id="userInterface">User interface</h3>
+                <h4 id="mainPage">Main page</h4>
+                <img src="main.pdf" alt="main page">
+                <h4 id="members">Members</h4>
+                <img src="members.pdf" alt="members">
+                <h4 id="membersupdate">Members Update</h4>
+                <img src="membersUpdate.pdf" alt="membersUpdate">
+                <h4 id="membersAdd">Members Add</h4>
+                <img src="membersAdd.pdf" alt="membersAdd">
+                <h4 id="clients"> Clients</h4>
+                <img src="clients.pdf" alt="clients">
+                <h4 id="employee">Employees</h4>
+                <img src="employees.pdf" alt="employees">
+                <h4 id="products">Products</h4>
+                <img src="products.pdf" alt="products">
+
+
+
+
+                <p>
+                    The application will be conected to a database using SQL, in most cases the integrted sql. In this way the user will be able to have
+                all the data from the business available on the app.
+                <h3 id="communicationInterface">Communication interface</h3>
+                <p>
+                    The application use HTTP as a protocol between client and server.
+                </p>
+                <h3 id="registerLogin">Login and register</h3>
+                <p>
+                    The login and register is not implemented yet. The client will be able to perform a order after completing a form.
+                    The employee will be able to do his task only if he is logged, and the admin too.
+                </p>
+                <h3  typeof="sa:MaterialsAndMethods" id="conclusion">Conlusion</h3>
+                <p>
+                    The good administration of someone's businees is the main goal. The app manage businees money, clients, orders and also employees.
+                </p>
+
+
+            </section>
+             <header>
+	<h1> Personas</h1>
+</header>
+<section>
+	<article itemscope itemtype="http://schema.org/Person" class="persona">
+		<div class="personaInfo">
+			<h3>Primary</h3>
+			<figure>
+<!--				<img itemprop="image" src="https://universul.net/wp-content/uploads/2019/11/leonardo-dicaprio-fb.jpg" width="150" height="150" alt="persona image"  />-->
+			</figure>
+			<div class="personaBackground">
+				<h4>Name: <span itemprop="givenName">Mihai</span> <span itemprop="familyName">Petrescu</span></h4>
+					<h5>Background</h5>
+					<ul>
+						<li><strong>Date of Birth:</strong> <time itemprop="birthDate" datetime="1998-03-11">1998/03/2000</time></li>
+						<li><strong>Gender:</strong> <span itemprop="gender">Male</span></li>
+						<li itemprop="location" itemscope itemtype="http://schema.org/Place"><strong>Location:</strong> <span itemprop="name">Suceava, Romania</span></li>
+						<li itemprop="worksFor" itemscope itemtype="http://schema.org/Organization"><strong>Work place:</strong> <span itemprop="name">Administrator
+						</span></li>
+						<li itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization"><strong>School:</strong>  <span itemprop="name">USV</span></li>
+						<li><strong>Environment Level:</strong>Bakery</li>
+					</ul>
+			</div>
+		</div>
+		<div class="personaDetails">
+			<div class="detailsLeft">
+				<div class="leftGroup">
+					<h5>Main Points</h5>
+					<ul>
+						<li>Loves the bread</li>
+						<li>Like to deliver quality</li>
+						<li>Struggle to administrate his businees</li>
+						<li>Administrator of a bakery</li>
+						<li>He has a beautiful family</li>
+					</ul>
+				</div>
+				<div class="leftGroup">
+					<h5>Goals</h5>
+					<ul>
+						<li>Reduce the loss on his business</li>
+						<li>Have more time</li>
+						<li>Grow his business</li>
+					</ul>
+				</div>
+				<div class="leftGroup">
+					<h5>Frustrations and Pain Points</h5>
+					<p>Some of the difficulties the user has with the product.</p>
+					<ul>
+						<li>Some employees stil want to steal from him.</li>
+						<li>He struggle to mentain the good management of his products</li>
+					</ul>
+				</div>
+			</div>
+			<div itemprop="description" class="detailsRight">
+				<h5>Detailed Description</h5>
+                <p>
+					He wants to reduce the loss and then to grow the company.
+                </p>
+                <p>
+                    He is hoping that a good application will help him control better all the money and the produts from his company.
+                </p>
+
+
+			</div>
+		</div>
+		<div class="personaScenarios">
+			<h5>Scenarios</h5>
+            <p>After I told my ideea of a business administration application he was very interested.
+            </p>
+		</div>
+
+	</article>
+</section>
+<section>
+	<article itemscope itemtype="http://schema.org/Person" class="persona">
+		<div class="personaInfo">
+			<h3>Secondary</h3>
+			<figure>
+<!--				<img itemprop="image" src="https://universul.net/wp-content/uploads/2019/11/leonardo-dicaprio-fb.jpg" width="150" height="150" alt="persona image"  />-->
+			</figure>
+			<div class="personaBackground">
+				<h4>Name: <span itemprop="givenName">David</span> <span itemprop="familyName">Manolache</span></h4>
+					<h5>Background</h5>
+					<ul>
+						<li><strong>Date of Birth:</strong> <time itemprop="birthDate" datetime="1994-11-11">11/11/2000</time></li>
+						<li><strong>Gender:</strong> <span itemprop="gender">Male</span></li>
+						<li itemprop="location" itemscope itemtype="http://schema.org/Place"><strong>Location:</strong> <span itemprop="name">Suceava, Romania</span></li>
+						<li itemprop="worksFor" itemscope itemtype="http://schema.org/Organization"><strong>Work place:</strong> <span itemprop="name">Administrator
+						</span></li>
+						<li itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization"><strong>School:</strong>  <span itemprop="name">USV</span></li>
+						<li><strong>Environment Level:</strong>Pizza</li>
+					</ul>
+			</div>
+		</div>
+		<div class="personaDetails">
+			<div class="detailsLeft">
+				<div class="leftGroup">
+					<h5>Main Points</h5>
+					<ul>
+						<li>Loves the pizza</li>
+						<li>Like to deliver quality</li>
+						<li>Struggle to administrate his businees</li>
+						<li>Administrator of a pizza fast food</li>
+						<li>He has a beautiful wife</li>
+					</ul>
+				</div>
+				<div class="leftGroup">
+					<h5>Goals</h5>
+					<ul>
+						<li>Reduce the loss on his business</li>
+						<li>Have more time</li>
+						<li>Grow his business</li>
+					</ul>
+				</div>
+				<div class="leftGroup">
+					<h5>Frustrations and Pain Points</h5>
+					<p>Some of the difficulties the user has with the product.</p>
+					<ul>
+						<li>Some employees stil want to steal from him.</li>
+						<li>He struggle to mentain the good management of his products</li>
+					</ul>
+				</div>
+			</div>
+			<div itemprop="description" class="detailsRight">
+				<h5>Detailed Description</h5>
+                <p>
+					He wants to reduce the loss and then to grow the company.
+                </p>
+                <p>
+                    He is hoping that a good application will help him control better all the money and the produts from his company.
+                </p>
+
+
+			</div>
+		</div>
+		<div class="personaScenarios">
+			<h5>Scenarios</h5>
+            <p>After I told my ideea of a business administration application he was very interested and gave me a pizza.
+            </p>
+		</div>
+
+	</article>
+</section>
+            <section typeof="sa:ReferenceList" id="referinte" role="doc-bibliography">
+                <h2 id="bibliography">Bibliography</h2>
+                    <ul>
+
+                        <li property="schema:citation" role="doc-biblioentry" typeof="schema:WebPage" class="busaco"
+                            resource="https://www.w3schools.com">
+                            <cite property="schema:name">
+                                <a href="https://www.w3schools.com">
+                                    W3School
+                                </a>
+                            </cite>
+                        </li>
+                    </ul>
+            </section>
+        </article>
+    </body>
+</html>
